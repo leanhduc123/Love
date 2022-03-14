@@ -1,0 +1,91 @@
+html,
+body {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body > img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -4;
+}
+
+.bg_heart {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  top: -50%;
+  transform: rotate(-45deg);
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart > img {
+  transform: rotate(45deg);
+  border-radius: 100%;
+}
+
+.heart:before {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.heart:after {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 100%;
+  z-index: -1;
+}
+@keyframes love {
+  0% {
+    top: 110%;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+h1 {
+  font-family: "Indie Flower", cursive;
+  color: #ff4444;
+  text-align: center;
+  font-size: 100px;
+  position: absolute;
+  top: 0;
+  transform: translate(40vw, 35vh);
+  z-index: -2;
+}
